@@ -17,6 +17,10 @@ export class EventBindComponent {
     this.times = 0;
   }
 
+  resetUserInput() {
+    this.userInput = '';
+  }
+
   onUserInput(event: Event) {
     const target = event.target as HTMLInputElement;
     this.userInput = target.value;
