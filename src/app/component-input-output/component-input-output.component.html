@@ -1,0 +1,24 @@
+<div class="border border-2 border-secondary">
+  <div class="bg-info text-center">component-input-output</div>
+  <div class="p-2">
+    <app-simple-table1
+      (deleteUserChild)="onDeleteUserParent($event)"
+      (sendUserFromChild)="onReceivedUser($event)"
+      [userData]="userData"
+    ></app-simple-table1>
+
+    <div *ngIf="receivedUser" class="card w-50">
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ receivedUser.lastname }}
+        </h5>
+        <h6 class="card-subtitle">
+          {{ receivedUser.firstname }}
+        </h6>
+        <p class="card-text">
+          {{ receivedUser.firstname }}'s age is {{ receivedUser.age }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

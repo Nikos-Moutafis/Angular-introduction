@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col">
+    <form [formGroup]="form" class="d-flex flex-column gap-2">
+      <!--Firstname-->
+      <div class="form-group">
+        <label for="firstname" class="col-form-label">First name</label>
+        <input
+          type="text"
+          id="firstname"
+          class="form-control"
+          formControlName="firstname"
+        />
+      </div>
+      <!--Lastname-->
+      <div class="form-group">
+        <label for="lastname" class="col-form-label">Last name</label>
+        <input
+          type="text"
+          id="lastname"
+          class="form-control"
+          formControlName="lastname"
+        />
+      </div>
+
+      <!--Email-->
+      <div class="form-group">
+        <label for="email" class="col-form-label">Email</label>
+        <input
+          type="text"
+          id="email"
+          class="form-control"
+          formControlName="email"
+        />
+      </div>
+
+      <!--Password-->
+      <div class="form-group">
+        <label for="password" class="col-form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          formControlName="password"
+        />
+      </div>
+
+      <!--Repeat password-->
+      <div class="form-group">
+        <label for="repeatPassword" class="col-form-label"
+          >Repeat Password</label
+        >
+        <input
+          type="password"
+          id="repeatPassword"
+          class="form-control"
+          formControlName="repeatPassword"
+        />
+      </div>
+
+      <!--Submit-->
+      <div class="form-group">
+        <button (click)="onSubmit()" class="btn btn-primary">
+          Submit Form
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="col">
+    <p class="mt--3">Form Valid: {{ form.valid }}</p>
+    <p>
+      First Name : {{ form.controls.firstname.value }}<br />
+      First Name Errors: {{ controlError("firstname") | json }}
+    </p>
+    <p class="mt-4">
+      Last Name : {{ form.controls.lastname.value }}<br />
+      Last Name Errors: {{ controlError("lastname") | json }}
+    </p>
+    <p class="mt-4">
+      Email : {{ form.controls.email.value }}<br />
+      Email Errors: {{ controlError("email") | json }}
+    </p>
+
+    <p class="mt-5">
+      Password : {{ form.controls.password.value }}<br />
+      Password Errors: {{ controlError("password") | json }}
+    </p>
+    <p class="mt-5">
+      Repeat Password : {{ form.controls.repeatPassword.value }}<br />
+      Repeat Password: {{ controlError("repeatPassword") | json }}
+    </p>
+  </div>
+</div>
