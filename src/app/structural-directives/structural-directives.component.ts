@@ -17,10 +17,11 @@ export class StructuralDirectivesComponent {
   paragraphVisible = true;
 
   userData: User[] = [
-    { firstname: 'John', lastname: 'Abram', age: 12 },
-    { firstname: 'Jim', lastname: 'Abram', age: 24 },
-    { firstname: 'Jane', lastname: 'Abram', age: 123 },
-    { firstname: 'Joahna', lastname: 'Abram', age: 20 },
+    { firstname: 'Rick', lastname: 'Grimes', age: 47 },
+    { firstname: 'Glenn', lastname: 'Rhee', age: 32 },
+    { firstname: 'Daryl', lastname: 'Dyxon', age: 34 },
+    { firstname: 'Negan', lastname: 'Lucile', age: 38 },
+    { firstname: 'Abraham', lastname: 'Ford', age: 39 },
   ];
 
   toggleParagraph() {
