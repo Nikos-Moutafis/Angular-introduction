@@ -13,11 +13,11 @@ export interface User {
 })
 export class ComponentInputComponent {
   userData: User[] = [
-    { firstname: 'John', lastname: 'Grimes', age: 12 },
-    { firstname: 'Jim', lastname: 'Ree', age: 24 },
-    { firstname: 'Jane', lastname: 'Brown', age: 123 },
-    { firstname: 'Joahna', lastname: 'Annalise', age: 20 },
-    { firstname: 'Jane', lastname: 'Cruz', age: 123 },
+    { firstname: 'Rick', lastname: 'Grimes', age: 47 },
+    { firstname: 'Glenn', lastname: 'Rhee', age: 32 },
+    { firstname: 'Daryl', lastname: 'Dyxon', age: 34 },
+    { firstname: 'Negan', lastname: 'Lucile', age: 38 },
+    { firstname: 'Abraham', lastname: 'Ford', age: 39 },
   ];
 
   sortByAgeDesc() {
