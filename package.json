@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build --base-href /angular-introduction/",
     "build:local": "ng build",
-    "build:prod": "ng build --output-path docs --base-href https://chfragAUEB.github.io/angular-introduction/",
+    "build:prod": "ng build --output-path docs --base-href https://Nikos-Moutafis.github.io/Angular-introduction/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
